@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Me</title>
+</head>
+<body>
+  <h1>Contact Me</h1>
+
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="projects.html">Projects</a> |
+    <a href="contact.html">Contact</a>
+  </nav>
+<form onsubmit="showData(event)">
+  <label>Name: <input type="text" name="name" id="name"></label><br><br>
+  <label>Email: <input type="email" name="email" id="email"></label><br><br>
+  <label>Message:<br>
+    <textarea name="message" rows="5" cols="30" id="message"></textarea>
+  </label><br><br>
+  <input type="submit" value="Send">
+</form>
+
+<div id="result"></div>q
+
+<script>
+  function showData(event) {
+    event.preventDefault(); // Prevent page reload
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    document.getElementById("result").innerHTML = `
+      <h3>Form Submitted</h3>
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Message:</strong> ${message}</p>
+    `;
+  }
+</script>
+<h3>Location</h3>
+  <iframe src="https://maps.google.com/maps?q=Chennai&t=&z=13&ie=UTF8&iwloc=&output=embed" width="300" height="200"></iframe>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio</p>
+  </footer>
+</body>
+</html>
