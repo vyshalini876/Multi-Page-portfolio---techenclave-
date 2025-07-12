@@ -7,11 +7,11 @@ REQUIREMENT SECTION:
 •Navigation to other pages
 2.About Page
 •Bio
-•Timeline (use table or list)
+•Timeline (used list)
 •Image with <figure> and <figcaption>
 3.Projects Page
 •List 2–3 projects
-•Include descriptions and GitHub links (if available)
+•Included descriptions
 4.Contact Page
 •Form (Name, Email, Message)
 •Embedded map via <iframe> (optional)
